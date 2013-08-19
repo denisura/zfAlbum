@@ -1,0 +1,27 @@
+{
+    "name": "denisura/zf-album",
+    "description": "Album Application for ZF2",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "homepage": "http://framework.zend.com/",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.7",
+        "zendframework/zendframework": ">=2.2.2",
+        "zendframework/zftool":"dev-master",
+        "doctrine/doctrine-orm-module": "0.7.*"
+    },
+    "require-dev": {
+        "zendframework/zend-developer-tools": "dev-master",
+        "bjyoungblood/bjy-profiler": "dev-master",
+        "phpunit/phpunit": "3.8.*",
+        "phpunit/dbunit": ">=1.2",
+        "pdepend/pdepend": "*",
+        "phploc/phploc": "*",
+        "phpmd/phpmd": "*",
+        "squizlabs/php_codesniffer": "dev-master"
+    }
+}
