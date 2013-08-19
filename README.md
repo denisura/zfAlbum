@@ -16,6 +16,8 @@ php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));"
 
 Installation
 ------------
+git clone https://github.com/denisura/zfAlbum.git tmp
+cd tmp&&php composer.phar install --dev
 
 Doctrine Schema validation
 ./vendor/bin/doctrine-module.bat orm:validate-schema
