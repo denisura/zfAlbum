@@ -4,16 +4,22 @@
     "license": "BSD-3-Clause",
     "keywords": [
         "framework",
-        "zf2"
+        "zf2",
+        "backbone",
+        "api"
     ],
     "homepage": "http://framework.zend.com/",
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.7",
-        "zendframework/zendframework": ">=2.2.2",
+        "zendframework/zendframework": "=2.2.2",
         "zendframework/zftool":"dev-master",
-        "doctrine/doctrine-orm-module": "0.7.*"
-    },
+        "doctrine/doctrine-orm-module": "0.*",
+        "doctrine/common": ">=2.1",
+        "phly/phly-restfully": "dev-master",
+        "zfr/zfr-cors":"1.0.*",
+        "doctrine/dbal": "2.4.0"
+},
     "require-dev": {
         "zendframework/zend-developer-tools": "dev-master",
         "bjyoungblood/bjy-profiler": "dev-master",
