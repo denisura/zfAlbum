@@ -17,7 +17,6 @@
         "doctrine/doctrine-orm-module": "0.*",
         "doctrine/common": ">=2.1",
         "phly/phly-restfully": "dev-master",
-        "zfr/zfr-cors":"1.0.*",
         "doctrine/dbal": "2.4.0"
 },
     "require-dev": {
