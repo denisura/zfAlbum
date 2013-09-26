@@ -7,8 +7,6 @@ return array(
         'DoctrineModule',
         'DoctrineORMModule',
         'PhlyRestfully',
-        'PhlyRestfully',
-        'ZfrCors',
         'Album',
         'Application',
     ),

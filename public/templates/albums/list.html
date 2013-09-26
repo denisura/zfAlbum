@@ -1,0 +1,26 @@
+<h1>My albums</h1>
+<p>
+    <a href="#/new" class="btn btn-primary">Add new album</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>&nbsp;</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% _.each(albums,function(album){ %>
+    <tr>
+        <td><%= htmlDecode(album.get('title')) %></td>
+        <td><%= htmlDecode(album.get('artist')) %></td>
+        <td>
+            <a href="#/view/<%= htmlDecode(album.get('id')) %>" class="btn btn-small">View</a>
+            <a href="#/edit/<%= htmlDecode(album.get('id')) %>" class="btn btn-small">Edit</a>
+            <a href="#/delete/<%= htmlDecode(album.get('id')) %>" class="btn btn-small btn-danger">Delete</a>
+        </td>
+    </tr>
+    <% }) %>
+    </tbody>
+</table>

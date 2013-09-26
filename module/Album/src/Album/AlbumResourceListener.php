@@ -163,11 +163,11 @@ class AlbumResourceListener extends AbstractListenerAggregate
     public function onFetch(ResourceEvent $e)
     {
         $id = $e->getParam('id');
-        $paste = $this->entity->find($id);
-        if (!$paste) {
+        $album = $this->entity->find($id);
+        if (!$album) {
             throw new DomainException('Album not found.'.$id, 404);
         }
-        return $paste;
+        return $album;
     }
 
     /**

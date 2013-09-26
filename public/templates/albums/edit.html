@@ -1,0 +1,13 @@
+<form class="edit-album-form">
+    <legend><%= album ? 'Update':'Create' %> Album</legend>
+    <label>Title</label>
+    <input type="text" name="title" value="<%=  album ? htmlDecode(album.get('title')):'' %>"/>
+    <label>Artist</label>
+    <input type="text" name="artist" value="<%=  album ? htmlDecode(album.get('artist')):'' %>"/>
+    <hr/>
+    <button type="submit" class="btn"><%= album ? 'Update':'Create' %></button>
+    <% if (album) {%>
+    <input type="hidden" name="id" value="<%=  htmlDecode(album.get('id')) %>"/>
+    <a href="#/delete/<%= htmlDecode(album.get('id')) %>" class="btn btn-danger">Delete</a>
+    <% }%>
+</form>
